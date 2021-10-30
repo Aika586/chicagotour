@@ -1,6 +1,7 @@
 
 import './App.css';
 import Title from './Title';
+import PLACEList from './PLACEList';
 
 function App() {
 
@@ -9,8 +10,10 @@ function App() {
 
     <div className="App">
       <Title/>
+      <PLACEList/>
+      
     
-      <h1>Learn React</h1>
+     
       
       </div>
         
