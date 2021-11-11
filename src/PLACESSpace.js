@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
+import './PLACESSpace.css';
+
 
 
 export default function PLACESSpace(props) {
     const{name,image,address}=props
     return (
-        <div>
+        <div className="PLACESSpace">
             <img src={`${process.env.PUBLIC_URL}/images/${image}`}
              width ='300' height ='300' alt="Hello"/>
             <h1> {name}</h1>
@@ -13,3 +15,4 @@ export default function PLACESSpace(props) {
         </div>
     )
 }
+  

@@ -1,5 +1,6 @@
-import React from 'react'
+import React from 'react';
 import PLACESSpace from './PLACESSpace';
+import './PLACEList.css'
 
 
 

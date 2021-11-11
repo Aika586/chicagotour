@@ -2,6 +2,7 @@
 import './App.css';
 import Title from './Title';
 import PLACEList from './PLACEList';
+import Footer from './Footer';
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
     <div className="App">
       <Title/>
       <PLACEList/>
+      <Footer/>
       
     
      
