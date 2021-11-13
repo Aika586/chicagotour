@@ -1,33 +1,35 @@
 import React from 'react';
 import PLACESSpace from './PLACESSpace';
 import './PLACEList.css'
-
+import data from './places-data.json'
 
 
 export default function PLACEList() {
-    return (
-        <div className="PLACEList">
-            <PLACESSpace 
-            name="Buckingham Fountain"
-            address="301 S Columbus DR, Chicago, IL 60605"
-            image="buckingham-fountain.png"
-                            />
-            <PLACESSpace
-            name="Chicago River-Walk"
-            address="301 S Columbus DR, Chicago, IL 60605"
-            image="chicago-riverwalk.jpeg"/>
 
-            <PLACESSpace
-            name="Lincoln Zoo"
-            address="301 S Columbus DR, Chicago, IL 60605"
-            image="lincoln-zoo.jpeg"/>
+    const places = data.map(({ title, address, images,hours }) => {
+  return <PLACESSpace key={title} 
+                    name={title}    
+                    address={address} image={images[0]} 
+                    hours={hours} />;
+});
 
-            <PLACESSpace
-            name="Millenuim Park"
-            address="301 S Columbus DR, Chicago, IL 60605"
-            image="millenium-park.jpeg"/>
-            
-        </div>
+    return(
+    <div className="PLACEList">
+
+        {places}
+
+    </div>
+
+    
     )
+
+
 }
+
+
+
+
+
+
+
 
