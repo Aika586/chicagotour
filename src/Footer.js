@@ -5,7 +5,7 @@ import './Footer.css'
 export default function Footer() {
     return (
         <div className="Footer">
-            <p className="Footer-title">Alan Rakymzhan copyright 2021 </p>
+            <p className="Footer-title">Aikokul Chargynova copyright 2021 </p>
             
         </div>
     )

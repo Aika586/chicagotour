@@ -6,8 +6,10 @@ import data from './places-data.json'
 
 export default function PLACEList() {
 
-    const places = data.map(({ title, address, images,hours }) => {
-  return <PLACESSpace key={title} 
+    const places = data.map(({ title, address, images,hours }, i) => {
+  return <PLACESSpace
+                    id={i}
+                    key={title} 
                     name={title}    
                     address={address} image={images[0]} 
                     hours={hours} />;
