@@ -1,11 +1,12 @@
 
 import './App.css';
-import Title from './Title';
-import PLACEList from './PLACEList';
+import Title from './Title/Title';
+import PLACEList from './PLACEList/PLACEList';
 import Footer from './Footer';
-import About from './About';
+import About from './About/About';
 import {HashRouter as Router, Routes, Route} from 'react-router-dom'
-import PLACESDetails from './PLACESDetails'
+import PLACESDetails from './PLACESDetails/PLACESDetails'
+
 
 function App() {
 

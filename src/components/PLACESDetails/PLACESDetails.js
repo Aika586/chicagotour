@@ -1,4 +1,4 @@
-import data from './places-data.json'
+import data from '../../places-data.json'
 import {useParams} from 'react-router-dom'
 
 const PLACESDetails=()=> {
